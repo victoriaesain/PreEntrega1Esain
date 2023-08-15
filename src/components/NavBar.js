@@ -3,24 +3,15 @@ import CartWidget from "./CartWidget/CartWidget";
 
 function NavBar() {
   return (
-    <>
+    <header>
+      <h3>MUSIC STORE</h3>
       <nav>
-        <h3>MUSIC STORE</h3>
-        <ul>
-          <li>
-            <button>Instrumentos de Percusion</button>
-          </li>
-          <li>
-            <button>Instrumentos de Cuerda</button>
-          </li>
-          <li>
-            <button>Instrumentos de Viento</button>
-          </li>
-        </ul>
-
-        <CartWidget />
+        <a href="#">Instrumentos de Percusion</a>
+        <a href="#">Instrumentos de Cuerda</a>
+        <a href="#">Instrumentos de Viento</a>
       </nav>
-    </>
+      <CartWidget />
+    </header>
   );
 }
 
