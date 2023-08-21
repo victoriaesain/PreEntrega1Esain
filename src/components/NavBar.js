@@ -6,9 +6,9 @@ function NavBar() {
     <header>
       <h3>MUSIC STORE</h3>
       <nav>
-        <a href="#">Instrumentos de Percusion</a>
-        <a href="#">Instrumentos de Cuerda</a>
-        <a href="#">Instrumentos de Viento</a>
+        <button>Instrumentos de Percusion</button>
+        <button>Instrumentos de Cuerda</button>
+        <button>Instrumentos de Viento</button>
       </nav>
       <CartWidget />
     </header>
