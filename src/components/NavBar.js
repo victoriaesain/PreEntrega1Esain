@@ -1,14 +1,18 @@
-import React from "react";
 import CartWidget from "./CartWidget/CartWidget";
+import { Link } from "react-router-dom";
+import InstrumentosPercusion from "./InstrumentosPercusion";
+import InstrumentosCuerda from "./InstrumentosCuerda";
+import InstrumentosViento from "./InstrumentosViento";
+
 
 function NavBar() {
   return (
     <header>
       <h3>MUSIC STORE</h3>
       <nav>
-        <button>Instrumentos de Percusion</button>
-        <button>Instrumentos de Cuerda</button>
-        <button>Instrumentos de Viento</button>
+        <Link to="/src/components/InstrumentosPercusion.js"> <InstrumentosPercusion /></Link>
+        <Link to="/src/components/InstrumentosCuerda.js"> <InstrumentosCuerda /></Link>
+        <Link to="/src/components/InstrumentosViento.js"> <InstrumentosViento /></Link>
       </nav>
       <CartWidget />
     </header>
