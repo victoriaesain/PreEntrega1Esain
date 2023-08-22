@@ -1,8 +1,8 @@
 import CartWidget from "./CartWidget/CartWidget";
 import { Link } from "react-router-dom";
-import InstrumentosPercusion from "./InstrumentosPercusion";
-import InstrumentosCuerda from "./InstrumentosCuerda";
-import InstrumentosViento from "./InstrumentosViento";
+import InstrumentosPercusion from "./Tablets";
+import InstrumentosCuerda from "./Notebooks";
+import InstrumentosViento from "./Celulares";
 
 
 function NavBar() {
