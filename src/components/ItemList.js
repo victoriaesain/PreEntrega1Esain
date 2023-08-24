@@ -1,9 +1,11 @@
+import Item from "./Item"
 
 
-function ItemList({Productos}) {
+
+function ItemList({productos}) {
   return (
     <div>
-      {Productos.map(prod => <Item key={prod.id}{...prod} />)}
+      {productos.map(prod => <Item key={prod.id}{...prod} />)}
     </div>
   )
 }

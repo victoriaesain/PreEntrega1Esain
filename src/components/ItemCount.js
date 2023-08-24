@@ -17,9 +17,9 @@ function ItemCount({ stock, initial, onAdd }) {
   return (
     <>
       <div>
-        <button>+</button>
+        <button onClick={sumar} >+</button>
         <h3>{contador}</h3>
-        <button>-</button>
+        <button onClick={restar} >-</button>
       </div>
       <div>
         <button onClick={() => onAdd(contador)} disabled={!stock}>

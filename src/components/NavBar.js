@@ -1,21 +1,21 @@
 import CartWidget from "./CartWidget/CartWidget";
-import { Link } from "react-router-dom";
-import InstrumentosPercusion from "./Tablets";
-import InstrumentosCuerda from "./Notebooks";
-import InstrumentosViento from "./Celulares";
+import { Link, NavLink } from "react-router-dom";
+
 
 
 function NavBar() {
   return (
-    <header>
-      <h3>MUSIC STORE</h3>
-      <nav>
-        <Link to="/src/components/InstrumentosPercusion.js"> <InstrumentosPercusion /></Link>
-        <Link to="/src/components/InstrumentosCuerda.js"> <InstrumentosCuerda /></Link>
-        <Link to="/src/components/InstrumentosViento.js"> <InstrumentosViento /></Link>
-      </nav>
+    <nav>
+      <Link to="/">
+        <h3>ELECTRONIC STORE</h3>
+      </Link>
+      <div>
+        <NavLink to={`/categoria/celular`}>Celulares</NavLink>
+        <NavLink to={`/categoria/notebook`}>Notebook</NavLink>
+        <NavLink to={`/categoria/tablet`}>Tablets</NavLink>
+      </div>
       <CartWidget />
-    </header>
+    </nav>
   );
 }
 

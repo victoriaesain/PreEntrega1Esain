@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom"
+
+
 
 
 function Item({id, nombre, img, precio, stock}) {
@@ -6,6 +9,16 @@ function Item({id, nombre, img, precio, stock}) {
         <header>
         <h2>{nombre}</h2>
         </header>
+        <image>
+            <img src={img} alt={nombre}/>
+        </image>
+        <section>
+            <p> Precio: ${precio}</p>
+            <p>Stock disponible: {stock}</p>
+        </section>
+        <footer>
+            <Link to={`/item/${id}`}>Ver detalle</Link>
+        </footer>
     </article>
   )
 }
