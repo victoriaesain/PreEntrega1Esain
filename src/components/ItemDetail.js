@@ -1,14 +1,7 @@
 import ItemCount from "./ItemCount";
 
-const ItemDetail = ({
-  id,
-  nombre,
-  img,
-  categoria,
-  descripcion,
-  precio,
-  stock,
-}) => {
+
+function ItemDetail({ id, nombre, img, categoria, descripcion, precio, stock }) {
   return (
     <article>
       <header>
@@ -24,13 +17,13 @@ const ItemDetail = ({
       </section>
       <footer>
         <ItemCount
-          initial={1}
           stock={stock}
-          onAdd={(contador) => console.log("Cantidad agregada", contador)}
+          initial={1}
+          onAdd={(contador) => console.log(`Cantidad agregada: ${contador}`)}
         />
       </footer>
     </article>
   );
-};
+}
 
 export default ItemDetail;

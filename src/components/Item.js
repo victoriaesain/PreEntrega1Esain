@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom"
 
-
-
-
-function Item({id, nombre, img, precio, stock}) {
+const Item = ({id, nombre, img, precio, stock})=> {
   return (
     <article>
         <header>
