@@ -73,3 +73,10 @@ export const getProductoById = (productId)  => {
     });
 }
 
+export const getProductosByCategory = (categoryId) => {
+    return new Promise((resolve) => {
+        setTimeout(()=>{
+            resolve(productos.filter(item => item.categoria === categoryId))
+        })
+    })
+}
